@@ -1,3 +1,9 @@
+# tfstate
+
+Terraform の state を保管するためのリソースを管理する terraform コードです。
+
+このコードは local に state を保存します。
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
