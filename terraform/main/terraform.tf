@@ -1,6 +1,9 @@
 terraform {
-  backend "local" {
-    path = "terraform.tfstate"
+  backend "s3" {
+    bucket         = "saikyo-fisdemo-tfstate"
+    key            = "main/terraform.tfstate"
+    region         = "ap-northeast-1"
+    dynamodb_table = "saikyo-fisdemo-tfstate"
   }
 
   required_version = ">= 1.3.0"
